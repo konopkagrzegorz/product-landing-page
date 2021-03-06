@@ -104,6 +104,11 @@ nav > ul {
   justify-content: center;
 }
 
+.product-grid {
+  display: flex;
+  justify-content: center;
+}
+
 #features {
   margin: auto;
   width: 80%;
@@ -142,7 +147,8 @@ nav > ul {
   border: 1px solid;
   border-color: black;
   width: 250px;
-  margin: 0 20px;
+  height: 250px;
+  margin: 20px 20px;
 }
 
 .product-heading {
@@ -153,6 +159,12 @@ nav > ul {
 
 .product-heading > h2 {
   vertical-align: middle;
+  margin: 10px 10px;
+  font-weight: bold;
+}
+
+.product > ul > li {
+  margin: 10px;
 }
 
 @media (max-width: 578px) {
@@ -181,5 +193,16 @@ nav > ul {
   ul {
     justify-content: flex-end;
     margin-left: auto;
+  }
+}
+
+@media (max-width: 928px) {
+  .product-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product {
+    margin: 20px auto;
   }
 }
