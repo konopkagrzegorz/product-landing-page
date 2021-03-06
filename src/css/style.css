@@ -1,0 +1,185 @@
+/** global element styling **/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4eaf4;
+  font-family: "Montserrat", sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: solid 2px #eee;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #16b1f5;
+}
+
+form {
+  margin-top: 100px;
+  line-break: strict;
+}
+
+form > input {
+  margin-top: 20px;
+  width: 320px;
+  height: 32px;
+  border-color: transparent;
+  background-color: lightblue;
+  color: black;
+}
+
+form > button {
+  margin-top: 20px;
+  height: 32px;
+  border-color: transparent;
+  border-radius: 4px;
+  border-color: lightblue;
+  background-color: lightblue;
+  width: 320px;
+  opacity: 0.5;
+}
+
+form > button:hover {
+  opacity: 1;
+}
+.logo {
+  width: 60vw;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-left: 0px;
+}
+
+nav {
+  font-weight: 400;
+  z-index: 1;
+}
+
+nav > ul {
+  min-width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  letter-spacing: 2px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+}
+
+#features {
+  margin: auto;
+  width: 80%;
+  margin-top: 80px;
+}
+
+#features .icon {
+  color: #16b1f5;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.features-description {
+  text-align: left;
+  margin-bottom: 50px;
+  max-width: 650px;
+}
+
+.features-description > p {
+  text-align: justify;
+}
+
+#div-video {
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+}
+
+#div-video > iframe {
+  width: 100%;
+  max-width: 615px;
+  margin-bottom: 20px;
+}
+
+.product {
+  border: 1px solid;
+  border-color: black;
+  width: 250px;
+  margin: 0 20px;
+}
+
+.product-heading {
+  background-color: #16b1f5;
+  color: #eee;
+  height: 46px;
+}
+
+.product-heading > h2 {
+  vertical-align: middle;
+}
+
+@media (max-width: 578px) {
+  header {
+    display: flex;
+    height: 120px;
+    justify-content: end;
+  }
+
+  form {
+    margin-top: 155px;
+  }
+
+  nav > ul {
+    min-width: 150px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+  }
+
+  nav > ul > li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+}
