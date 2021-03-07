@@ -57,7 +57,7 @@ form > input {
   color: black;
 }
 
-form > button {
+form > input {
   margin-top: 20px;
   height: 32px;
   border-color: transparent;
@@ -68,7 +68,7 @@ form > button {
   opacity: 0.5;
 }
 
-form > button:hover {
+form > input:hover {
   opacity: 1;
 }
 .logo {
@@ -152,19 +152,45 @@ nav > ul {
 }
 
 .product-heading {
+  display: flex;
   background-color: #16b1f5;
   color: #eee;
-  height: 46px;
+  height: 44px;
+  justify-content: center;
+  padding: 10px 10px;
 }
 
 .product-heading > h2 {
-  vertical-align: middle;
-  margin: 10px 10px;
   font-weight: bold;
 }
 
 .product > ul > li {
   margin: 10px;
+}
+
+footer {
+  background-color: #16b1f5;
+  height: 66px;
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  margin: 10px 10px;
+  border: none;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+  margin-right: 20px;
 }
 
 @media (max-width: 578px) {
